@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79219892706",
+    "project_id": "softdev-af928",
+    "storage_bucket": "softdev-af928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79219892706:android:a1be5812be3beab38bd9bb",
+        "android_client_info": {
+          "package_name": "com.example.accounting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyo-xg13hFOAQcFUeZPnKG4uB5kFuy0KY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

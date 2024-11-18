@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/grey_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/MenuBar"
+            android:background="@drawable/menu_frame"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/cashBookButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:src="@mipmap/book_icon_foreground"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="70dp"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/settingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:src="@mipmap/setting_icon_foreground"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="70dp"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/CategoryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:src="@mipmap/category_icon_foreground"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="70dp"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/ReportButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selected_menu_back"
+                    android:src="@mipmap/analysis_icon_foreground"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="70dp"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/budgetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/budget_icon_foreground"
+                    android:background="@color/white"
+                    android:layout_margin="1dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="70dp"
+                    android:maxHeight="70dp"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/MenuBar"
+            android:padding="10dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="View and generate report in Exel or PDF"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PDFButton"
+            android:text="generate PDF report"
+            android:theme="@style/buttonStyle"
+            android:backgroundTint="@color/plain_blue"
+            android:textSize="20sp"/>
+
+        <!--<Button
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ExcelButton"
+            android:text="generate Excel report"
+            android:theme="@style/buttonStyle"
+            android:backgroundTint="@color/plain_blue"
+            android:textSize="20sp"/>-->
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
