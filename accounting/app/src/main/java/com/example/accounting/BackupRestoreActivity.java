@@ -60,8 +60,8 @@ public class BackupRestoreActivity extends AppCompatActivity {
     public static final String KEY_EMAIL = "email";
     public static final String KEY_IS_LOGGED_IN = "is_logged_in";
 
-    private String ClintId = "ATy3TNYyNqL40ltisK_-oN991mzSo1nqkO2L-RnseLhRdPkLwNn5YHCWZosqsuTTbxRmVA36c_g2FlZ4";
-    private String SecretKey = "EHyj4Bsl-GPEL7xjMxFDAs5fY3XkE7tIFWWicGFm7PV8P0DEK4_raWtXf_F5UGDnazgrZMK7dqzCSSE0";
+    private String ClintId = "";
+    private String SecretKey = "";
     private String ReturnUrl = "com.example.accounting://demoapp";
     private String accessToken = "";
     private String uniqueId;
